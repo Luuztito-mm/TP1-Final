@@ -1,0 +1,431 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    color:  #0c0103; /* Color de texto principal de la descripcion del proyecto */
+    background-color: #0a0f24; /* Fondo principal azul oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #0a0f24; /* Fondo del encabezado blanco */
+    color: #fdf9f9; /* Color de texto del encabezado gris oscuro */
+    padding: 2rem 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0; /* Borde inferior más claro */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: #e9e2e2; /* Color de texto del logo gris oscuro */
+}
+
+.logo h2 {
+    font-size: 0.9rem;
+    color: #f5f1f1; /* Color de texto del subtítulo gris */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+ 
+}
+
+.menu a {
+    color: #333333; /* Color de los enlaces gris oscuro */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 15px; /* Espacio vertical y horizontal dentro del "círculo" */
+    border-radius: 20px; /* Hace que los bordes sean redondeados */
+    background-color: #f0f0f0; /* Un color de fondo suave para simular el círculo */
+}
+
+.menu a:hover {
+    color: #ff66b2; /* Mantener el color rosa para el hover */
+    background-color: #0b0e6c;
+}
+
+/* Presentación (Inicio) */
+.presentacion {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column; /* Cambiado: apila los elementos verticalmente */
+  align-items: center; /* Cambiado: centra los elementos horizontalmente */
+  text-align: center; /* Agregado: centra el texto */
+  gap: 4rem;
+  padding: 50px 20px;
+  background-color: transparent;
+  color: #f5f5f5;
+  min-height: 100vh;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.presentacion img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 102, 178, 0.3);
+}
+
+.presentacion h2 {
+  font-size: 4rem; /* Más grande */
+  font-weight: 400;
+  color: #ffd1e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Tipografía moderna */
+  text-align: center;
+  line-height: 1.4;
+  max-width: 500px; /* Limita ancho para que se divida en 3 líneas */
+  margin: 0 auto;
+  white-space: pre-line; /* Permite saltos de línea si usas \n en HTML */
+  text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.6); /* Sombra rosa */
+}
+
+.presentacion p {
+  font-size: 2rem; /* Más grande */
+  font-weight: 900;
+  color: #eee3e9;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  line-height: 1.2; /* Ajusta el espaciado vertical */
+}
+
+
+/* Proyectos */
+.proyectos {
+    padding: 4rem 2rem;
+    background-color: #0a0f24; /* Fondo blanco suave */
+    display: flex;
+    flex-direction: column; /* Cambiado: apila los elementos verticalmente */
+    align-items: center; /* Cambiado: centra los elementos horizontalmente */
+    text-align: center; /* Agregado: centra el texto */
+    min-height: 100vh;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.btn-proyecto {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: auto;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff69b4, #87cefa); /* Rosa a azul */
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-proyecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  
+}
+
+.proyectos h2 {
+    font-size: 2.5rem;
+    color: #ff66b2; /* Título de proyectos en rosa fuerte */
+    margin-bottom: 40px;
+    
+}
+.proyectos h3{
+    color: #ff99cc;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.proyecto {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(112, 7, 7, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f9e2eb; /* Borde sutil rosa claro */
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 102, 178, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+
+/* Experiencia y habilidades */
+#experiencia {
+    background-color: #0a0f24; /* Fondo blanco suave */
+    padding: 50px 20px;
+    margin: 40px 0;
+    display: flex;
+  flex-direction: column; /* Cambiado: apila los elementos verticalmente */
+  align-items: center; /* Cambiado: centra los elementos horizontalmente */
+  text-align: center; /* Agregado: centra el texto */
+  min-height: 100vh;
+  justify-content: center;
+  padding-top: 0;
+}
+
+#experiencia h2 {
+    font-size: 2.2rem;
+    color: #ff66b2; /* Título en rosa fuerte */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.experiencia-item {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    border: 1px solid #f9e2eb; /* Borde sutil rosa claro */
+}
+
+.experiencia-item:hover {
+    transform: translateY(-5px);
+}
+
+.experiencia-item h3 {
+    font-size: 1.3rem;
+    color: #ff99cc; /* Título del ítem de experiencia en rosa */
+    margin-bottom: 5px;
+}
+
+.experiencia-item p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+#habilidades {
+    padding: 4rem 2rem;
+    background-color: #0a0f24; /* Fondo blanco suave */
+    display: flex;
+    flex-direction: column; /* Cambiado: apila los elementos verticalmente */
+    align-items: center; /* Cambiado: centra los elementos horizontalmente */
+    text-align: center; /* Agregado: centra el texto */
+    min-height: 100vh;
+    justify-content: center;
+    padding-top: 0;
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    color: #ff66b2; /* Título de habilidades en rosa fuerte */
+    margin-bottom: 40px;
+}
+
+#habilidades h2 span {
+    color: #1a1a1a; /* El "span" dentro del título en negro */
+}
+
+.habilidades-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #fdf2f7; /* Fondo rosa */
+    border-radius: 30px;
+    padding: 40px 60px;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.2); /* Sombra en tono rosa */
+    border: 1px solid #ff99cc; /* Borde rosa en las tarjetas */
+}
+
+.card h3 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Contacto */
+.contacto {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fdf2f7; /* Fondo de la sección de habilidades en rosa muy claro */
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 1200px;
+  
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    color: #ff66b2;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    padding: 0.8rem;
+    border: 1px solid #ff99cc; /* Borde de los campos en rosa */
+    border-radius: 8px;
+}
+
+button {
+    background: #ff66b2; /* Botón en rosa fuerte */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #c04a8b; /* Tono de rosa más oscuro al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    background: #0a0f24;
+    color: rgb(248, 244, 248);
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.redes a {
+    color: rgb(249, 242, 249);
+    margin: 0 0.5rem;
+    border-top: 3px solid #ff69b4; /* Línea recta rosa */
+    margin-top: 2rem;
+}
+.btn-cv {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ff66b2;
+    color: #fff !important;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-cv:hover {
+    background: #c04a8b;
+}
+
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .habilidades-contenedor {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion h2 {
+        font-size: 2rem;
+    }
+
+    .presentacion p {
+        font-size: 1rem;
+    }
+
+    .proyecto img {
+        height: 150px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

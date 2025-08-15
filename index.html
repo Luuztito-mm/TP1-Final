@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Luz Tito</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header>
+        <div class="logo">
+            <h1>Luz Melanie Tito</h1>
+            <p>Desarrolladora Web Junior</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Presentación personal -->
+    <section id="presentacion" class="presentacion">
+        <img src="img/foto-perfil.jpeg" alt="Foto de Melanie">
+        <div>
+            <h2>Hola, soy Luz 👋🏻</h2>
+            <p>
+                Soy desarrolladora web junior apasionada por el diseño y la programación.
+                Me gusta crear sitios web funcionales, atractivos y fáciles de usar.  
+                Este portfolio es mi carta de presentación, donde podrás ver mis trabajos y habilidades.
+            </p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="proyecto">
+                <img src="img/menu-digital.jpeg" alt="Proyecto 1">
+                <h3>Sitio de Recetas</h3>
+                <p>Un sistema web pensado para reemplazar las cartas físicas en bares y restaurantes. Permite a los clientes acceder al menú desde su teléfono escaneando un código QR, visualizar los platos con fotos y descripciones detalladas, filtrar por categorías 
+                (como entradas, principales, postres o bebidas) y conocer precios actualizados. 
+                Ideal para reducir costos de impresión, mejorar la experiencia del cliente y facilitar 
+                la actualización de productos y promociones en tiempo real.
+                </p>
+                <a href="https://luuztito-mm.github.io/menu-digital/"  class="btn-proyecto"  target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="img/tarjeta-presentacion.jpg" alt="Proyecto 2">
+                <h3>Tarjeta de presentacion</h3>
+                <p>Una tarjeta interactiva que reemplaza las tradicionales tarjetas impresas. Incluye nombre, profesión, foto y enlaces directos a redes sociales, correo electrónico y WhatsApp para contacto instantáneo. Puede compartirse fácilmente a través de un enlace o código QR, 
+                eliminando la necesidad de impresión y permitiendo su actualización en cualquier momento. 
+                Ideal para profesionales y emprendedores que buscan una forma moderna y ecológica de presentarse.
+                </p>
+                <a href="https://luuztito-mm.github.io/tarjeta-presentacion/"  class="btn-proyecto"  target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="img/lista-tareas.jpg" alt="Proyecto 3">
+                <h3>App de Lista de Tareas</h3>
+                <p>Una herramienta web sencilla y efectiva para organizar actividades diarias. Permite agregar, marcar como completadas y eliminar tareas de forma rápida e intuitiva. Incluye un diseño limpio y adaptable a dispositivos móviles para que puedas llevar tu 
+                organización a cualquier parte. Ideal para estudiantes, trabajadores y cualquier persona 
+                que busque mejorar su productividad manteniendo un control claro de sus pendientes.
+                </p>
+                <a href="https://luuztito-mm.github.io/Practica-Flexbox/"  class="btn-proyecto"  target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia">
+  <h2>Experiencia</h2>
+  <div class="experiencia-item">
+    <h3>Prácticas en Estudio Creativo Web</h3>
+    <p>Desarrollo y mantenimiento de sitios HTML/CSS.</p>
+  </div>
+  <div class="experiencia-item">
+    <h3>Proyectos freelance</h3>
+    <p>Creación de portfolios y páginas personales.</p>
+  </div>
+</section>
+
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades" >
+        <h2>Skills</h2>
+    <div class="habilidades-contenedor">
+    <!-- Frontend -->
+        <div class="card">
+            <h3>Frontend</h3>
+            <div class="icons">
+                <img src="img/logo-html.png" alt="HTML5">
+                <img src="img/logo-css.png" alt="CSS">
+                <img src="img/logo-js.png" alt="JavaScript">
+                <img src="img/logo-react.png" alt="React">
+        </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="card">
+      <h3>Backend</h3>
+      <div class="icons">
+        <img src="img/logo-java.png" alt="Java">
+        <img src="img/logo-sqlser.png" alt="SQL Server">
+      </div>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="card">
+      <h3>Herramientas</h3>
+      <div class="icons">
+        <img src="img/logo-visual.png" alt="VS Code">
+        <img src="img/logo-github.png" alt="GitHub">
+        <img src="img/logo-postman.png" alt="Postman">
+
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Melanie Tito</p>
+        <div class="redes">
+            <a href="https://github.com/Luuztito-mm" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/luuztito" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/luzmelanie.yelmamiranda" target="_blank" >Facebook</a>
+            <a href="docs/CV-Melanie-Tito.pdf" download class="btn-cv">Descargar CV</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
