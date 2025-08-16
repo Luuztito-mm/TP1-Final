@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:  #0a0f24; /* Fondo del encabezado blanco */
-    color: #fdf9f9; /* Color de texto del encabezado gris oscuro */
+    background:  #0a0f24; /* Fondo del encabezado azul para la paleta de colores */
+    color: #fdf9f9; /* Color de texto del encabezado similar a los demas*/
     padding: 2rem 4rem;
     position: fixed;
     width: 100%;
@@ -38,12 +38,12 @@ header {
 .logo h1 {
     font-size: 1.8rem;
     margin-bottom: 0.2rem;
-    color: #e9e2e2; /* Color de texto del logo gris oscuro */
+    color: #e9e2e2; 
 }
 
 .logo h2 {
     font-size: 0.9rem;
-    color: #f5f1f1; /* Color de texto del subtítulo gris */
+    color: #f5f1f1; 
 }
 
 .menu {
@@ -54,18 +54,18 @@ header {
 }
 
 .menu a {
-    color: #333333; /* Color de los enlaces gris oscuro */
+    color: #333333; /* Color de los enlaces gris oscuro para una paleta similar */
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.3s ease;
     padding: 8px 15px; /* Espacio vertical y horizontal dentro del "círculo" */
     border-radius: 20px; /* Hace que los bordes sean redondeados */
-    background-color: #f0f0f0; /* Un color de fondo suave para simular el círculo */
+    background-color: #f0f0f0; 
 }
 
 .menu a:hover {
-    color: #ff66b2; /* Mantener el color rosa para el hover */
+    color: #ff66b2; 
     background-color: #0b0e6c;
 }
 
@@ -94,37 +94,37 @@ header {
 }
 
 .presentacion h2 {
-  font-size: 4rem; /* Más grande */
+  font-size: 4rem; 
   font-weight: 400;
   color: #ffd1e8;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Tipografía moderna */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Tipografía moderna para variar */
   text-align: center;
   line-height: 1.4;
-  max-width: 500px; /* Limita ancho para que se divida en 3 líneas */
+  max-width: 500px; 
   margin: 0 auto;
-  white-space: pre-line; /* Permite saltos de línea si usas \n en HTML */
+  white-space: pre-line; 
   text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.6); /* Sombra rosa */
 }
 
 .presentacion p {
-  font-size: 2rem; /* Más grande */
+  font-size: 2rem; 
   font-weight: 900;
   color: #eee3e9;
   text-align: center;
   margin-bottom: 15px;
-  font-family: 'Playfair Display', serif; /* Tipografía elegante */
-  line-height: 1.2; /* Ajusta el espaciado vertical */
+  font-family: 'Playfair Display', serif; 
+  line-height: 1.2; 
 }
 
 
 /* Proyectos */
 .proyectos {
     padding: 4rem 2rem;
-    background-color: #0a0f24; /* Fondo blanco suave */
+    background-color: #0a0f24; 
     display: flex;
-    flex-direction: column; /* Cambiado: apila los elementos verticalmente */
-    align-items: center; /* Cambiado: centra los elementos horizontalmente */
-    text-align: center; /* Agregado: centra el texto */
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
     min-height: 100vh;
     justify-content: center;
     padding-top: 0;
@@ -136,7 +136,7 @@ header {
   margin-top: auto;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(135deg, #ff69b4, #87cefa); /* Rosa a azul */
+  background: linear-gradient(135deg, #ff69b4, #87cefa); 
   border: none;
   border-radius: 25px;
   text-decoration: none;
@@ -152,7 +152,7 @@ header {
 
 .proyectos h2 {
     font-size: 2.5rem;
-    color: #ff66b2; /* Título de proyectos en rosa fuerte */
+    color: #ff66b2; 
     margin-bottom: 40px;
     
 }
@@ -178,12 +178,12 @@ header {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    border: 1px solid #f9e2eb; /* Borde sutil rosa claro */
+    border: 1px solid #f9e2eb; 
 }
 
 .proyecto:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(255, 102, 178, 0.2); /* Sombra más intensa al hacer hover */
+    box-shadow: 0 15px 30px rgba(255, 102, 178, 0.2);
 }
 
 .proyecto img {
@@ -196,13 +196,13 @@ header {
 
 /* Experiencia y habilidades */
 #experiencia {
-    background-color: #0a0f24; /* Fondo blanco suave */
+    background-color: #0a0f24; 
     padding: 50px 20px;
     margin: 40px 0;
     display: flex;
-  flex-direction: column; /* Cambiado: apila los elementos verticalmente */
-  align-items: center; /* Cambiado: centra los elementos horizontalmente */
-  text-align: center; /* Agregado: centra el texto */
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
   min-height: 100vh;
   justify-content: center;
   padding-top: 0;
@@ -210,7 +210,7 @@ header {
 
 #experiencia h2 {
     font-size: 2.2rem;
-    color: #ff66b2; /* Título en rosa fuerte */
+    color: #ff66b2; 
     margin-bottom: 30px;
     text-align: center;
 }
@@ -222,7 +222,7 @@ header {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.2s;
-    border: 1px solid #f9e2eb; /* Borde sutil rosa claro */
+    border: 1px solid #f9e2eb; 
 }
 
 .experiencia-item:hover {
@@ -231,7 +231,7 @@ header {
 
 .experiencia-item h3 {
     font-size: 1.3rem;
-    color: #ff99cc; /* Título del ítem de experiencia en rosa */
+    color: #ff99cc;
     margin-bottom: 5px;
 }
 
@@ -242,11 +242,11 @@ header {
 
 #habilidades {
     padding: 4rem 2rem;
-    background-color: #0a0f24; /* Fondo blanco suave */
+    background-color: #0a0f24; 
     display: flex;
-    flex-direction: column; /* Cambiado: apila los elementos verticalmente */
-    align-items: center; /* Cambiado: centra los elementos horizontalmente */
-    text-align: center; /* Agregado: centra el texto */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
     min-height: 100vh;
     justify-content: center;
     padding-top: 0;
@@ -254,12 +254,12 @@ header {
 
 #habilidades h2 {
     font-size: 2.5rem;
-    color: #ff66b2; /* Título de habilidades en rosa fuerte */
+    color: #ff66b2; 
     margin-bottom: 40px;
 }
 
 #habilidades h2 span {
-    color: #1a1a1a; /* El "span" dentro del título en negro */
+    color: #1a1a1a; 
 }
 
 .habilidades-contenedor {
@@ -267,7 +267,7 @@ header {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    background-color: #fdf2f7; /* Fondo rosa */
+    background-color: #fdf2f7; 
     border-radius: 30px;
     padding: 40px 60px;
     max-width: 1100px;
@@ -283,8 +283,8 @@ header {
     border-radius: 15px;
     width: 280px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(255, 102, 178, 0.2); /* Sombra en tono rosa */
-    border: 1px solid #ff99cc; /* Borde rosa en las tarjetas */
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.2); 
+    border: 1px solid #ff99cc; 
 }
 
 .card h3 {
@@ -313,7 +313,7 @@ header {
 .contacto {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fdf2f7; /* Fondo de la sección de habilidades en rosa muy claro */
+    background-color: #fdf2f7; 
     border-radius: 15px;
     margin: 40px auto;
     max-width: 1200px;
@@ -337,12 +337,12 @@ form {
 
 input, textarea, button {
     padding: 0.8rem;
-    border: 1px solid #ff99cc; /* Borde de los campos en rosa */
+    border: 1px solid #ff99cc; 
     border-radius: 8px;
 }
 
 button {
-    background: #ff66b2; /* Botón en rosa fuerte */
+    background: #ff66b2; 
     color: white;
     border: none;
     cursor: pointer;
@@ -351,7 +351,7 @@ button {
 }
 
 button:hover {
-    background: #c04a8b; /* Tono de rosa más oscuro al pasar el cursor */
+    background: #c04a8b; 
 }
 
 /* Footer */
